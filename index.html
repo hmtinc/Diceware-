@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    <title>Diceware++ by hmtinc</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
+  </head>
+  <body>
+    <section class="page-header">
+      <h1 class="project-name">Diceware++</h1>
+      <h2 class="project-tagline">A C++ library for generating random diceware passwords</h2>
+      <a href="https://github.com/hmtinc/Diceware-" class="btn">View on GitHub</a>
+      <a href="https://github.com/hmtinc/Diceware-/zipball/master" class="btn">Download .zip</a>
+      <a href="https://github.com/hmtinc/Diceware-/tarball/master" class="btn">Download .tar.gz</a>
+    </section>
+
+    <section class="main-content">
+      <p><img src="https://github.com/hmtinc/" alt="logo"></p>
+
+<h1>
+<a id="diceware-" class="anchor" href="#diceware-" aria-hidden="true"><span class="octicon octicon-link"></span></a>Diceware ++</h1>
+
+<p>Diceware ++ is a command line c++ Library which will randomly generate a safe secure password using a series of 5 randomly
+generated values to reference a defined Diceware word list.</p>
+
+<h1>
+<a id="basic-usage" class="anchor" href="#basic-usage" aria-hidden="true"><span class="octicon octicon-link"></span></a>Basic Usage</h1>
+
+<p>Generating a password using diceware ++ requires you to provide a desired number of words as an integer.</p>
+
+<p>The following snippet can be used to generate a password without any console output </p>
+
+<div class="highlight highlight-source-c++"><pre> <span class="pl-c">//With No Console Output</span>
+    diceWarePassword passDiceWare =  GenPass(<span class="pl-c1">6</span>, <span class="pl-c1">false</span>);</pre></div>
+
+<p>The Following snippet can be used to generate a password with a full detailed console output consisting of the each indvidual die values. </p>
+
+<div class="highlight highlight-source-cs"><pre><span class="pl-c">//With Console Output</span>
+    diceWarePassword passDiceWareConsole =  GenPass(<span class="pl-c1">6</span>, <span class="pl-c1">false</span>);
+    cout &lt;&lt; <span class="pl-s"><span class="pl-pds">"</span>Password : <span class="pl-pds">"</span></span> &lt;&lt; endl;
+    cout &lt;&lt; <span class="pl-s"><span class="pl-pds">"</span>-----------<span class="pl-pds">"</span></span> &lt;&lt; endl;
+    cout &lt;&lt; passDiceWareConsole &lt;&lt; endl;</pre></div>
+
+<h1>
+<a id="incorporating-diceware--into-your-application" class="anchor" href="#incorporating-diceware--into-your-application" aria-hidden="true"><span class="octicon octicon-link"></span></a>Incorporating Diceware ++ into your application</h1>
+
+<p>Diceware ++ was designed with the intention to be integrated into other c++ applications that require the use of dice ware  password generation.
+To integrate it into your application, you will have to build the library with the given source files. </p>
+
+<p>If you wish you may also simply add the source files into your project and including the diceware header in your project file</p>
+
+<div class="highlight highlight-source-c++"><pre>#<span class="pl-k">include</span> <span class="pl-s"><span class="pl-pds">"</span>diceware.h<span class="pl-pds">"</span></span></pre></div>
+
+<h1>
+<a id="diceware-functions" class="anchor" href="#diceware-functions" aria-hidden="true"><span class="octicon octicon-link"></span></a>Diceware Functions</h1>
+
+<ul>
+<li>diceWarePassword GenPass (diceWordCount, debugInfo)
+Consumes a number of desired words and a Boolean Debug Value generates a password</li>
+<li>diceWareIndex IndexValue(DICEROLL rollstruct) 
+Consumes a dice structure and determines the index value of the referenced word</li>
+<li>DRoll (DICEROLL rollstruct) 
+Consumes a dice structure and generates 5 random numbers</li>
+<li>GetWord(diceWordIndex index)
+Consumes a index number and returns the referenced word</li>
+<li>diceRadomValue RandomNumGen () 
+Produces a random diceRandomValue between 1 and 6</li>
+</ul>
+
+<h1>
+<a id="diceware-data-types" class="anchor" href="#diceware-data-types" aria-hidden="true"><span class="octicon octicon-link"></span></a>Diceware Data Types</h1>
+
+<ul>
+<li>diceValue : Hold a generic Integer (mostly used to store Dice values)</li>
+<li>diceRadomValue : Integer used while generating a random integer</li>
+<li>diceWordCount : Used to store number of desired words</li>
+<li>diceWordIndex : Used to store the index value of a word</li>
+<li>debugInfo : Holds a boolean value which indicates if debug info should be outputted </li>
+<li>diceWareWord : Holds a string with a single Diceware word</li>
+<li>diceWarePassword : Holds the password as a string</li>
+</ul>
+
+<h1>
+<a id="goals" class="anchor" href="#goals" aria-hidden="true"><span class="octicon octicon-link"></span></a>Goals</h1>
+
+<p>The Goal of the diceware ++ is to provide a simple way to generate diceware passwords in c++.</p>
+
+<h1>
+<a id="people" class="anchor" href="#people" aria-hidden="true"><span class="octicon octicon-link"></span></a>People</h1>
+
+<p>Harsh Mistry - Programmer</p>
+
+<p>Jonathan from Noun Project - Logo Designer</p>
+
+      <footer class="site-footer">
+        <span class="site-footer-owner"><a href="https://github.com/hmtinc/Diceware-">Diceware++</a> is maintained by <a href="https://github.com/hmtinc">hmtinc</a>.</span>
+
+        <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the <a href="https://github.com/jasonlong/cayman-theme">Cayman theme</a> by <a href="https://twitter.com/jasonlong">Jason Long</a>.</span>
+      </footer>
+
+    </section>
+
+  
+  </body>
+</html>
