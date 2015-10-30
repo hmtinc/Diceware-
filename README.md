@@ -52,7 +52,7 @@ If you wish you may also simply add the source files into your project and inclu
 - diceWarePassword : Holds the password as a string
 
 #Sample Use
-The Sample Use folder contains some sample files repersenting the libraries functions.
+The Sample Use folder contains some sample files which display the libraries functions.
 
 #Goals
 The Goal of the diceware ++ is to provide a simple way to generate diceware passwords in c++.
