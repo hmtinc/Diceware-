@@ -15,7 +15,7 @@ The following snippet can be used to generate a password without any console out
 The Following snippet can be used to generate a password with a full detailed console output consisting of the each indvidual die values. 
 ```c#
 //With Console Output
-    diceWarePassword passDiceWareConsole =  GenPass(6, false);
+    diceWarePassword passDiceWareConsole =  GenPass(6, true);
     cout << "Password : " << endl;
     cout << "-----------" << endl;
     cout << passDiceWareConsole << endl;
