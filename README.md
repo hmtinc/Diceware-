@@ -1,6 +1,6 @@
 ![logo](https://raw.githubusercontent.com/hmtinc/Diceware-/master/Resources/logo.png?token=ABQMEnC7OEne0vfVahQToDOzSeo7zIFFks5WPBHuwA%3D%3D)
 # Diceware ++
-Diceware ++ is a command line c++ Library which will randomly generate a safe secure password using a series of 5 randomly
+Diceware ++ is a c++ Library which will randomly generate a safe secure password using a series of randomly
 generated values to reference a defined Diceware word list.
 
 # Basic Usage 
@@ -50,6 +50,9 @@ If you wish you may also simply add the source files into your project and inclu
 - debugInfo : Holds a boolean value which indicates if debug info should be outputted 
 - diceWareWord : Holds a string with a single Diceware word
 - diceWarePassword : Holds the password as a string
+
+#Sample Use
+The Sample Use folder contains some sample files repersenting the libraries functions.
 
 #Goals
 The Goal of the diceware ++ is to provide a simple way to generate diceware passwords in c++.
