@@ -1,4 +1,4 @@
-![logo](https://github.com/hmtinc/)
+![logo](https://raw.githubusercontent.com/hmtinc/Diceware-/master/Resources/logo.png?token=ABQMEnC7OEne0vfVahQToDOzSeo7zIFFks5WPBHuwA%3D%3D)
 # Diceware ++
 Diceware ++ is a command line c++ Library which will randomly generate a safe secure password using a series of 5 randomly
 generated values to reference a defined Diceware word list.
